@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Button, InputsSignUpContainer, SignUpContainer, Texts } from './StylesSignUp'
+import { Button, InputsSignUpContainer, LoginButton, SignUpContainer, Texts } from './StylesSignUp'
 import { useForm } from '../../hooks/useForm'
-import Header from '../../components/header/Header'
+import video from '../../assets/Chatterbox-Tech.mp4'
 import { goToLoginPage, goToPostsPage } from '../../router/coordinator'
 import { SignUpUser, validateEmail, validateName, validatePassword } from '../../constants/constants'
 import { useNavigate } from 'react-router-dom'
-
 
 const SignUp = () => {
   const navigate = useNavigate()
@@ -50,8 +49,15 @@ const SignUp = () => {
 
   return (
     <SignUpContainer>
-      <Header goToLoginPage={goToLoginPage} />
-      <h1>Olá, boas vindas ao LabEddit ;)</h1>
+      <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ width: '60%', height: '60%', objectFit: 'cover', backgroundColor: '#BEBEBE' }}
+        />
+      <h1>Boas vindas ao Chatterbox Tech ;)</h1>
       <InputsSignUpContainer>
         <input
           type="text"
@@ -77,11 +83,8 @@ const SignUp = () => {
           onChange={onChangeInputs}
           required />
       </InputsSignUpContainer>
-      <Texts>
-        <p>Ao continuar, você concorda com o nosso <a href='#'>Contrato de Usuário</a> e nossa <a href='#'>Política de Privacidade</a></p><br />
-        <input type='checkbox'></input> <span>Eu concordo em receber e-mails sobre coisas legais no LabEddit</span>
-      </Texts>
       <Button onClick={onSubmit}>{isLoading ? "Carregando..." : "Cadastrar"}</Button>
+      <LoginButton onClick={() => goToLoginPage(navigate)}>Já tem uma conta? Faça login!</LoginButton>
     </SignUpContainer>
   )
 }

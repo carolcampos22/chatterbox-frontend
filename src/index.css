@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
+:root {
+  --ocean-color: #4682B4; /* Azul metalizado */
+  --continent-color: #32CD32; /* Verde metálico */
+  --connection-line-color: #C0C0C0; /* Prata */
+  --dialog-bubble-color: #BEBEBE; /* Cinza metálico */
+}
