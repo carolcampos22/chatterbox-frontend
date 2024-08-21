@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SignUpContainer = styled.div`
-margin-top: 2vh;
+
     h1{
         margin-top: 5vh;
         margin-left: 8vw;
@@ -19,6 +19,11 @@ margin-top: 2vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img{
+      width: 22vw;
+      margin-bottom: -7vh;
+    }
 
     @media (max-width: 3000px) {
         width: 30vw;

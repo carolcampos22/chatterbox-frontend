@@ -6,7 +6,7 @@ export const ContainerLogin = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 1vh;
    
     @media (max-width: 3000px) {
         width: 30vw;
@@ -18,7 +18,9 @@ export const ContainerLogin = styled.div`
 
 export const Logo = styled.div`
     margin-bottom: 8vh;
-
+    img {
+      width: 24vw;
+    }
     h2 {
         color: var(--ocean-color)
     }
@@ -63,18 +65,19 @@ export const Button = styled.button`
   height: 5vh;
   border: none;
   border-radius: 27px;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
+  margin-top: -3vh;
   color: #fff;
-  background-color: var(--continent-color); /* Verde metálico */
+  background-color: var(--continent-color);
   font-size: 2vh;
   font-weight: bold;
-  box-shadow: 0 0 10px var(--continent-color); /* Adiciona um leve brilho ao botão */
+  box-shadow: 0 0 10px var(--continent-color);
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover {
     cursor: pointer;
-    background-color: var(--ocean-color); /* Azul metalizado */
-    box-shadow: 0 0 15px var(--ocean-color); /* Realça o brilho ao passar o mouse */
+    background-color: var(--ocean-color); 
+    box-shadow: 0 0 15px var(--ocean-color); 
   }
 
   @media (max-width: 3000px) {
@@ -85,10 +88,10 @@ export const Button = styled.button`
 export const CreateAccountButton = styled.button`
   width: 80vw;
   height: 5vh;
-  border: 2px solid var(--ocean-color); /* Azul metalizado */
+  border: 2px solid var(--ocean-color); 
   border-radius: 27px;
   margin-bottom: 3vh;
-  color: var(--ocean-color); /* Azul metalizado */
+  color: var(--ocean-color); 
   background-color: transparent;
   font-size: 2vh;
   font-weight: bold;
@@ -96,9 +99,9 @@ export const CreateAccountButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: var(--ocean-color); /* Azul metalizado */
-    color: var(--connection-line-color); /* Prata */
-    box-shadow: 0 0 15px var(--ocean-color); /* Adiciona brilho ao hover */
+    background-color: var(--ocean-color); 
+    color: var(--connection-line-color);
+    box-shadow: 0 0 15px var(--ocean-color); 
   }
 
   @media (max-width: 3000px) {

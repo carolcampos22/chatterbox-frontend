@@ -5,24 +5,41 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25vw;
+    width: 70vw;
+    height: 20vh;
+    padding-right: 5vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: #424242;
+    
 
     img{
-        width: 15vw;
-        margin-left: 32vw;
-        margin-top: 5vh;
+        width: 20vw;
 
-        @media (min-width: 950px){
+        /* @media (max-width: 750px){
             width: 10vw;
         }
 
         @media (min-width: 1200px){
             width: 7vw;
             margin-bottom: -7vh;
-        }
+        } */
         
         
     }
+
+    h1 {
+    font-size: 4.5rem;
+    color: #4682B4;
+    
+}
+
+    p {
+        color: #C0C0C0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
    
 
     a{
@@ -37,3 +54,4 @@ export const HeaderContainer = styled.div`
         cursor: pointer;
     }
 `
+

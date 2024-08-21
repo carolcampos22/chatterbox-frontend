@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, InputsSignUpContainer, LoginButton, SignUpContainer, Texts } from './StylesSignUp'
 import { useForm } from '../../hooks/useForm'
-import video from '../../assets/Chatterbox-Tech.mp4'
+import logo from '../../assets/chat.png'
 import { goToLoginPage, goToPostsPage } from '../../router/coordinator'
 import { SignUpUser, validateEmail, validateName, validatePassword } from '../../constants/constants'
 import { useNavigate } from 'react-router-dom'
@@ -49,14 +49,7 @@ const SignUp = () => {
 
   return (
     <SignUpContainer>
-      <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ width: '60%', height: '60%', objectFit: 'cover', backgroundColor: '#BEBEBE' }}
-        />
+      <img src={logo} alt='Logo da Chatterbox Tech' />
       <h1>Boas vindas ao Chatterbox Tech ;)</h1>
       <InputsSignUpContainer>
         <input

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/logo.webp'
-import video from '../../assets/Chatterbox-Tech.mp4'
+import logo from '../../assets/chat.png'
 import './StylesLogin.jsx'
 import { Button, ContainerLogin, CreateAccountButton, InputsLogin, Logo } from './StylesLogin.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -42,8 +41,9 @@ export const Login = ({ setIsLoggedIn }) => {
         goToPostsPage(navigate);
         setIsLoggedIn(true);
       } catch (error) {
+        console.log(error)
         setIsLoading(false);
-        alert(error.response.data);
+        // alert(error.response.data);
       }
     }
   };
@@ -51,15 +51,7 @@ export const Login = ({ setIsLoggedIn }) => {
   return (
     <ContainerLogin>
       <Logo>
-        {/* <img src={logo} alt="Logo" /> */}
-        <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ width: '60%', height: '60%', objectFit: 'cover', backgroundColor: '#BEBEBE' }}
-        />
+        <img src={logo} alt="Logo" />
         <h2>A sua rede social de tecnologia!</h2>
       </Logo>
       <InputsLogin>

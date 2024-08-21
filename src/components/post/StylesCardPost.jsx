@@ -5,6 +5,7 @@ export const ContainerCardPost = styled.div`
     border-radius: 20px;
     border: 1px solid lightgray;
     margin-top: 2vh;
+    width: 70vw;
     h3{
         margin-top: 2vh;
     }
@@ -12,9 +13,9 @@ export const ContainerCardPost = styled.div`
 
 export const LikesDislikesCommentsContainer = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    gap: 10vw;
+    gap: 1vw;
     margin-top: 2vh;
 `
 
@@ -22,7 +23,7 @@ export const LikesDislikes = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40vw;
+    width: 7vw;
     border: 2px solid lightgray;
     border-radius: 40px;
     margin-top: 1vh;
@@ -33,7 +34,7 @@ export const Comments = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 22vw;
+    width: 7vw;
     border: 2px solid lightgray;
     border-radius: 40px;
     margin-top: 1vh;

@@ -6,9 +6,11 @@ export const CommentsContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 3vw;
+    margin-top: 0;
+
     textarea{
         resize: none;
-        width: 90vw;
+        width: 70vw;
         height: 15vh;
         background-color: #EDEDED;
         padding: 1rem;

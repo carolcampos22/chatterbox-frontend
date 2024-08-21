@@ -1,7 +1,7 @@
-# Labeddit - Front-end
+# Chatterbox Tech - Front-end
 
-Este é o repositório front-end do projeto fullstack LabEddit. É um projeto mobile first de uma rede social no estilo Reddit, criado no bootcamp da Labenu.
-Link para o repositório back-end: https://github.com/carolcampos22/labeddit-backend
+Este é o repositório front-end do projeto fullstack Chatterbox Tech, uma rede social sobre tecnologia.
+Link para o repositório back-end: https://github.com/carolcampos22/chatterbox
 
 ## Tecnologias utilizadas
  - React.js
@@ -10,12 +10,12 @@ Link para o repositório back-end: https://github.com/carolcampos22/labeddit-bac
 ## Instalação
 Clone o repositório:
  ```bash
- git clone https://github.com/carolcampos22/labeddit-frontend
+ git clone https://github.com/carolcampos22/chatterbox-frontend.git
  ```
 
 Acesse o repositório do projeto: 
 ```bash
-cd labeddit-frontend
+cd chatterbox-frontend
 
 ```
 
@@ -37,10 +37,10 @@ npm run start
 yarn start
 ```
 
-## Site 
-https://labeddit-frontend-delta.vercel.app
+<!-- ## Site 
+https://labeddit-frontend-delta.vercel.app -->
 
-## Layout
+<!-- ## Layout
 
 1. Página de login:
 
@@ -56,12 +56,14 @@ https://labeddit-frontend-delta.vercel.app
 
 4. Página de comentários:
 
-![](./src/assets/screenshots/comments-page.png)
+![](./src/assets/screenshots/comments-page.png) -->
 
 ## Próximos passoa
-- Responsividade nas páginas de posts e de comentários
-- Adicionar header
-- Adicionar botões para facilitar a navegação entre as páginas
+- 
+- Ajustar o botão do navbar para mostrar opções de Entrar/Sair dependendo se o usuário está ou não logado
+- Context para gerenciamento de estados
+- Criação de uma página com formulário para criação de posts
+- Responsividade
 - Melhorias na estilização
 
 ## Autora

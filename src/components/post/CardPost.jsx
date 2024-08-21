@@ -7,10 +7,10 @@ import ChatText from '../../assets/chat-text.svg';
 import { LikeOrDislike } from '../../constants/constants';
 
 
-const CardPost = ({ creatorPost, content, likes, dislikes, comments, id, onClickComments }) => {
+const CardPost = ({ creatorPost, title, content, likes, dislikes, comments, id, onClickComments }) => {
   const location = useLocation();
   const isOnPostsPage = location.pathname === '/posts';
-  const [likeStatus, setLikeStatus] = useState(null); // null para nenhum like/dislike, 1 para like, 0 para dislike
+  const [likeStatus, setLikeStatus] = useState(null); 
 
   const handleLikeDislike = async (like) => {
     try {
@@ -26,7 +26,10 @@ const CardPost = ({ creatorPost, content, likes, dislikes, comments, id, onClick
   
   return (
     <ContainerCardPost>
+      {console.log(creatorPost)}
+      
       <p>Enviado por: {creatorPost}</p>
+      <h2>{title}</h2>
       <h3>{content}</h3>
       <LikesDislikesCommentsContainer>
         <LikesDislikes>

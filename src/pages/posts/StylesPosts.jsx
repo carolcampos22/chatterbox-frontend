@@ -5,33 +5,42 @@ export const PostsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10vw;
+    margin: 0 auto;
+    max-width: 60vw;
+
     textarea{
         resize: none;
-        width: 80vw;
+        width: 55vw;
         height: 15vh;
         background-color: #EDEDED;
         padding: 1rem;
         border: none;
-        border-radius: 12px;
-        margin-bottom: 1.5vh;
-        margin-top: 2vh;
+        border-radius: 12px;     
+        
     }
 `
 
+export const PostingArea = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    margin-top: 2vh;
+`
+
 export const ButtonPost = styled.button`
-   width:  80vw;
-   height: 5vh;
+   width:  15vw;
+   height: 15vh;
    border: none;
    border-radius: 12px;
-   margin-bottom: 3vh;
    color: #fff;
-   background-image: linear-gradient(to right, #FF6489 , #F9B24E);
-   font-size: 2vh;
+   background-color: var(--ocean-color);
+   font-size: 2rem;
    font-weight: bold;
 
    &:hover{
     cursor: pointer;
+    opacity: .8;
    }
 
 `
