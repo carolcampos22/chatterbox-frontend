@@ -59,9 +59,6 @@ https://labeddit-frontend-delta.vercel.app -->
 ![](./src/assets/screenshots/comments-page.png) -->
 
 ## Próximos passoa
-- 
-- Ajustar o botão do navbar para mostrar opções de Entrar/Sair dependendo se o usuário está ou não logado
-- Context para gerenciamento de estados
 - Criação de uma página com formulário para criação de posts
 - Responsividade
 - Melhorias na estilização
