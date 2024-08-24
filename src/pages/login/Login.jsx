@@ -52,6 +52,7 @@ export const Login = ({ setIsLoggedIn }) => {
     <ContainerLogin>
       <Logo>
         <img src={logo} alt="Logo" />
+        <h1>Chatterbox Tech</h1>
         <h2>A sua rede social de tecnologia!</h2>
       </Logo>
       <InputsLogin>
@@ -75,16 +76,19 @@ export const Login = ({ setIsLoggedIn }) => {
             minLength={6}
             required
           ></input>
+
+          <div>
+            <Button type="submit" onClick={onSubmit}>
+              {isLoading ? 'Carregando...' : 'Entrar'}
+            </Button>
+            <CreateAccountButton onClick={() => goToSignUpPage(navigate)}>
+              Criar uma conta!
+            </CreateAccountButton>
+          </div>
+          
         </form>
       </InputsLogin>
-      <div>
-        <Button type="submit" onClick={onSubmit}>
-          {isLoading ? 'Carregando...' : 'Entrar'}
-        </Button>
-        <CreateAccountButton onClick={() => goToSignUpPage(navigate)}>
-          Criar uma conta!
-        </CreateAccountButton>
-      </div>
+
     </ContainerLogin>
   );
 };

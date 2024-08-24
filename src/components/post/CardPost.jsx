@@ -34,17 +34,17 @@ const CardPost = ({ creatorPost, title, content, likes, dislikes, comments, id, 
       <LikesDislikesCommentsContainer>
         <LikesDislikes>
           <button onClick={() => handleLikeDislike(true)} disabled={likeStatus === 1}>
-            <img src={ArrowUp} alt="Up" />
+            <img src={ArrowUp} alt="Up" title='Like'/>
           </button>
           <span>{likes - dislikes}</span>
           <button onClick={() => handleLikeDislike(false)} disabled={likeStatus === 0}>
-            <img src={ArrowDown} alt="Down" />
+            <img src={ArrowDown} alt="Down" title='Dislike'/>
           </button>
         </LikesDislikes>
         {isOnPostsPage && (
           <Comments>
             <button onClick={() => onClickComments(id)}>
-              <img src={ChatText} alt="Comment" />
+              <img src={ChatText} alt="Comment" title="Ir para comentários" />
             </button>
             <span>{comments}</span>
           </Comments>

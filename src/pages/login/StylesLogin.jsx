@@ -19,17 +19,28 @@ export const ContainerLogin = styled.div`
 export const Logo = styled.div`
     margin-bottom: 8vh;
     img {
-      width: 24vw;
+      width: 22vw;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--ocean-color)
     }
     h2 {
-        color: var(--ocean-color)
+      color: gray;
     }
 `
 
 export const InputsLogin = styled.div`
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
+  margin-top: -3vh;
   display: flex;
   flex-direction: column;
+
+  div {
+      margin-top: 5vh;
+    }
+ 
   
   input {
     width: 80vw;
