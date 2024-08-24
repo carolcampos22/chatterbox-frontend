@@ -1,26 +1,30 @@
 import { useNavigate } from "react-router-dom"
 import { NavbarContainer } from "./StylesNavbar"
 import { goToLoginPage, goToPostsPage } from "../../router/coordinator"
+import { useSelector, useDispatch } from "react-redux"
+import { logoutUser } from "../../redux/user/actions"
 
 export const Navbar = () => {
     const navigate = useNavigate()
 
-    // const buttonAction = () => {
-    //     if (isLoggedIn) {
-    //         localStorage.removeItem("login-labeddit.token")
-    //         setIsLoggedIn(false)
+    const { currentUser } = useSelector((rootReducer) => rootReducer.userReducer)
 
-    //     }
-    //     goToLoginPage(navigate)
-    // }
+    const dispatch = useDispatch()
 
-    // const buttonText = isLoggedIn ? "Logout" : "Entrar"
+    console.log({ currentUser })
+
+    const handleLogoutClick = () => {
+        dispatch(logoutUser())
+        localStorage.removeItem("login-labeddit.token")
+        goToLoginPage(navigate)
+    }
+
     return (
         <NavbarContainer>
             <h3>Chatterbox Tech</h3>
-            <ul>                
+            <ul>
                 <li onClick={() => goToPostsPage(navigate)}>Posts</li>
-                <li>Entrar</li>
+                <li onClick={handleLogoutClick}>Sair</li>
             </ul>
         </NavbarContainer>
     )

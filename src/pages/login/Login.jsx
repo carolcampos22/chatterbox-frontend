@@ -7,9 +7,12 @@ import { goToPostsPage, goToSignUpPage } from '../../router/coordinator'
 import { useForm } from "../../hooks/useForm"
 import { validateEmail, validatePassword } from '../../constants/constants'
 import { LoginUser } from '../../constants/constants'
+import { useDispatch } from 'react-redux'
+import { loginUser } from '../../redux/user/actions.js'
 
 export const Login = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch()
   const [form, onChangeInputs, clearInputs] = useForm({
     email: "",
     password: ""
@@ -36,8 +39,9 @@ export const Login = ({ setIsLoggedIn }) => {
 
         localStorage.setItem("login-labeddit.token", token);
 
-        setIsLoading(false);
+        dispatch(loginUser({email: form.email, token}))
 
+        setIsLoading(false);
         goToPostsPage(navigate);
         setIsLoggedIn(true);
       } catch (error) {

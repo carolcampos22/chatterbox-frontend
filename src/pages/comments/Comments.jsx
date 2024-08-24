@@ -57,7 +57,7 @@ const Comments = () => {
       .catch(error => {
         console.log(error);
       });
-  }, [id, comments]);
+  }, [id]);
 
 
   if (!posts) {

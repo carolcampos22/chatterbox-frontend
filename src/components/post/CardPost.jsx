@@ -26,8 +26,7 @@ const CardPost = ({ creatorPost, title, content, likes, dislikes, comments, id, 
   
   return (
     <ContainerCardPost>
-      {console.log(creatorPost)}
-      
+            
       <p>Enviado por: {creatorPost}</p>
       <h2>{title}</h2>
       <h3>{content}</h3>

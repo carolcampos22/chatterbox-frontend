@@ -14,3 +14,4 @@ export const useForm = (initialState) => {
 
     return [form, onChangeInputs, clearInputs]
 }
+
