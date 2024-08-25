@@ -6,17 +6,19 @@ import Comments from "../pages/comments/Comments";
 import { useState } from "react";
 import Header from "../components/header/Header";
 import { Navbar } from "../components/navbar/Navbar";
+import { CreatePostFormPage } from "../pages/CreatePostFormPage/CreatePostFormPage";
 
 export const Router = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
-        <BrowserRouter> 
+        <BrowserRouter>
             <Routes>
-                <Route index element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+                <Route index element={<Login setIsLoggedIn={setIsLoggedIn} />} />,
                 <Route path="signup" element={<SignUp />} />
                 <Route path="posts" element={<Posts />} />
                 <Route path="comments/:id" element={<Comments />} />
+                <Route path="/new-post" element={<CreatePostFormPage />} />
             </Routes>
         </BrowserRouter>
     );

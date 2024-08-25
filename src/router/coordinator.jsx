@@ -14,3 +14,7 @@ export const goToCommentsPage = (navigate, id) => {
     navigate(`/comments/${id}`)
 }
 
+export const goToCreatePostFormPage = (navigate) => {
+    navigate("/new-post")
+}
+

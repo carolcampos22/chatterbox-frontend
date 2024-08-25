@@ -4,7 +4,7 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1vh 2vw;
-    width: 70vw;
+    width: 100vw;
     background-color: var(--connection-line-color);
 
     ul {

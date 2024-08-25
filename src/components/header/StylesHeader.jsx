@@ -5,16 +5,17 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    gap: 15vw;
+    width: 100vw;
     height: 20vh;
-    padding-right: 5vw;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    background-color: #424242;
+    padding-right: 27vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-color: #2d2c2c;
     
 
     img{
-        width: 20vw;
+        width: 15vw;
 
         /* @media (max-width: 750px){
             width: 10vw;

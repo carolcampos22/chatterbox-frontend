@@ -3,7 +3,7 @@ import { ButtonPost, PostingArea, PostsContainer } from './StylesPosts'
 import CardPost from '../../components/post/CardPost'
 import { AddPost, ListPosts } from '../../constants/constants';
 import { useNavigate } from 'react-router-dom'
-import { goToCommentsPage } from '../../router/coordinator'
+import { goToCommentsPage, goToCreatePostFormPage } from '../../router/coordinator'
 import { Loading } from '../comments/StylesComments'
 import { useForm } from '../../hooks/useForm'
 import { useProtectedPage } from '../../hooks/useProtectedPage';
@@ -15,34 +15,12 @@ import { Navbar } from '../../components/navbar/Navbar';
 const Posts = () => {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true);
-  const [form, onChangeInputs, clearInputs] = useForm({
-    content: "",
-
-  })
+  
   const navigate = useNavigate()
   useProtectedPage(navigate)
   const onClickComments = (idPost) => {
 
     goToCommentsPage(navigate, idPost)
-  }
-
-  const onSubmit = async (event) => {
-    event.preventDefault()
-    clearInputs()
-
-
-    try {
-      const { token } = await AddPost({
-        content: form.content,
-
-      })
-      localStorage.getItem("login-labeddit.token", token)
-      alert("Post enviado!")
-
-    } catch (error) {
-      alert(error.response.data);
-      console.log(error)
-    }
   }
 
   useEffect(() => {
@@ -70,15 +48,7 @@ const Posts = () => {
       <PostsContainer>
         <Header />
         <Navbar />
-        <PostingArea>
-          <textarea
-            name='content'
-            value={form.content}
-            onChange={onChangeInputs}
-            placeholder='Escreva seu post...'
-          ></textarea>
-          <ButtonPost type='submit' onClick={onSubmit}>Postar</ButtonPost>
-        </PostingArea>
+        <ButtonPost onClick={() => goToCreatePostFormPage(navigate)}>Novo post</ButtonPost>
         <div>
           {posts.map((post, index) => {
             return (

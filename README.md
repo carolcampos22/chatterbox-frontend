@@ -59,9 +59,11 @@ https://labeddit-frontend-delta.vercel.app -->
 ![](./src/assets/screenshots/comments-page.png) -->
 
 ## Próximos passoa
-- Criação de uma página com formulário para criação de posts
+- Ajustes nas renderizações na página de comentários
+- Ajustes na atualização dos estados de likes/dislikes
 - Responsividade
 - Melhorias na estilização
+- Light/dark mode
 
 ## Autora
 
