@@ -81,7 +81,9 @@ export const LikeOrDislike = async (body, id) => {
           },
         }
       );
+
       return data;
+      
     } catch (error) {
       console.error(error);
       throw error; 

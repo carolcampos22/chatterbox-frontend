@@ -38,7 +38,7 @@ const Posts = () => {
           setLoading(false)
         }
       )
-  }, [posts.like, posts.dislikes])
+  }, [])
 
 
   if (loading) {
