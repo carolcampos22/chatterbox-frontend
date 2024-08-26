@@ -58,7 +58,7 @@ https://labeddit-frontend-delta.vercel.app -->
 
 ![](./src/assets/screenshots/comments-page.png) -->
 
-## Próximos passoa
+## Próximos passos
 - Ajustes nas renderizações na página de comentários
 - Ajustes na atualização dos estados de likes/dislikes
 - Responsividade
