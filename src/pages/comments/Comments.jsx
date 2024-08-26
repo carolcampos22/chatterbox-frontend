@@ -183,6 +183,7 @@ const Comments = () => {
               <CardPost
                 key={index}
                 creatorPost={post.creator?.nickname}
+                title={post.title}
                 content={post.content}
                 likes={post.likes}
                 dislikes={post.dislikes}

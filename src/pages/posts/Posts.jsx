@@ -23,10 +23,13 @@ const Posts = () => {
     goToCommentsPage(navigate, idPost)
   }
 
+ 
+
   useEffect(() => {
     ListPosts()
       .then(data => {
         setPosts(data)
+        console.log(data)
         setLoading(false)
       })
       .catch(
@@ -35,7 +38,7 @@ const Posts = () => {
           setLoading(false)
         }
       )
-  }, [])
+  }, [posts.like, posts.dislikes])
 
 
   if (loading) {

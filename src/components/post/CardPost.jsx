@@ -15,7 +15,7 @@ const CardPost = ({ creatorPost, title, content, likes, dislikes, comments, id, 
   const handleLikeDislike = async (like) => {
     try {
       const body = {
-        like: like,
+        like,
       };
       const result = await LikeOrDislike(body, id);
       setLikeStatus(result.like ? 1 : 0);

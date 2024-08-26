@@ -6,18 +6,12 @@
 }
 
 :root {
-  --ocean-color: #4682B4; /* Azul metalizado */
-  --continent-color: #32CD32; /* Verde metálico */
-  --connection-line-color: #C0C0C0; /* Prata */
-  --dialog-bubble-color: #BEBEBE; /* Cinza metálico */
+  --ocean-color: #4682B4;
+  --continent-color: #32CD32;
+  --connection-line-color: #C0C0C0; 
+  --dialog-bubble-color: #BEBEBE; 
 
   --primary-color: #b7cfe8;
   --secondary-color: #C0C0C0;
   --text-color: #F0F0F0;
-
-
 }
-
-/*Balão de Diálogo Principal: #1E90FF (Azul elétrico)
-Elementos de Circuito: #C0C0C0 (Cinza metálico)
-Fundo: #F0F0F0 (Branco suave)*/

@@ -2,18 +2,50 @@ import styled from "styled-components";
 
 export const ContainerLogin = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 1vh;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
    
-    @media (max-width: 3000px) {
+    /* @media (max-width: 3000px) {
         width: 30vw;
         margin-left: 33vw;
 
-    }
+    } */
     
+`
+
+export const LeftSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 50vw;
+  height: 100vh;
+  color: var(--ocean-color);
+
+  img {
+    width: 30vw;
+    height: 80vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+`
+
+export const RightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--connection-line-color);
+  width: 50vw;
+  height: 100vh;
 `
 
 export const Logo = styled.div`
@@ -36,6 +68,12 @@ export const InputsLogin = styled.div`
   margin-top: -3vh;
   display: flex;
   flex-direction: column;
+
+  h3 {
+    color: var(--ocean-color);
+    font-size: 2rem;
+    margin-bottom: 1vh;
+  }
 
   div {
       margin-top: 5vh;
