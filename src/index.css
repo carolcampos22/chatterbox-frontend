@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,12 +6,42 @@
 }
 
 :root {
-  --ocean-color: #4682B4;
-  --continent-color: #32CD32;
-  --connection-line-color: #C0C0C0; 
-  --dialog-bubble-color: #BEBEBE; 
+  --ocean-color: #4682B4; /* Azul Metalizado */
+  --continent-color: #32CD32; /* Verde Metálico */
+  --connection-line-color: #C0C0C0; /* Prata */
+  --dialog-bubble-color: #BEBEBE; /* Cinza Metálico */
 
-  --primary-color: #b7cfe8;
-  --secondary-color: #C0C0C0;
-  --text-color: #F0F0F0;
+  --primary-color: #b7cfe8; /* Azul Claro */
+  --secondary-color: #E0F7FA; /* Cinza Claro */
+  --text-color: #333333;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ocean-color);
+}
+
+a:hover {
+  color: var(--continent-color);
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--continent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
 }

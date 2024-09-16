@@ -6,6 +6,13 @@ export const ContainerCardPost = styled.div`
     border: 1px solid lightgray;
     margin-top: 2vh;
     width: 70vw;
+
+    p {
+        margin-top: 0; 
+        text-align: left; 
+        color: #686868;
+    }
+
     h3{
         margin-top: 2vh;
     }
@@ -23,7 +30,7 @@ export const LikesDislikes = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 7vw;
+    width: 8vw;
     border: 2px solid lightgray;
     border-radius: 40px;
     margin-top: 1vh;

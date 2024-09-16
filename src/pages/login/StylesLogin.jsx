@@ -9,24 +9,17 @@ export const ContainerLogin = styled.div`
     width: 100vw;
     height: 100vh;
     margin: 0;
-   
-    /* @media (max-width: 3000px) {
-        width: 30vw;
-        margin-left: 33vw;
-
-    } */
-    
-`
+`;
 
 export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  width: 50vw;
+  background: linear-gradient(135deg, #0B3D91, #7D3C98);
+  width: 90vw;
   height: 100vh;
-  color: var(--ocean-color);
+  color: #F8F9FA;
 
   img {
     width: 30vw;
@@ -36,32 +29,34 @@ export const LeftSide = styled.div`
   h1 {
     font-size: 3rem;
   }
-`
+`;
 
 export const RightSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--connection-line-color);
+  background-color: #E0E0E0;
   width: 50vw;
   height: 100vh;
-`
+`;
 
 export const Logo = styled.div`
-    margin-bottom: 8vh;
-    img {
-      width: 22vw;
-    }
+  margin-bottom: 8vh;
 
-    h1 {
-      font-size: 3rem;
-      color: var(--ocean-color)
-    }
-    h2 {
-      color: gray;
-    }
-`
+  img {
+    width: 22vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #4682B4;
+  }
+
+  h2 {
+    color: gray;
+  }
+`;
 
 export const InputsLogin = styled.div`
   margin-bottom: 4vh;
@@ -70,30 +65,29 @@ export const InputsLogin = styled.div`
   flex-direction: column;
 
   h3 {
-    color: var(--ocean-color);
+    color: #4682B4;
     font-size: 2rem;
     margin-bottom: 1vh;
   }
 
   div {
-      margin-top: 5vh;
-    }
- 
-  
+    margin-top: 5vh;
+  }
+
   input {
     width: 80vw;
     height: 6vh;
-    border: 2px solid var(--connection-line-color); 
+    border: 2px solid #C0C0C0;
     padding-left: 3vw;
     border-radius: 10px;
     color: black;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
-    margin: .3vh;
-    
+    margin: 0.3vh;
+
     &:focus {
-      border-color: var(--continent-color); 
-      box-shadow: 0 0 20px var(--continent-color);
+      border-color: #7D3C98;
+      box-shadow: 0 0 20px #7D3C98;
       outline: none;
     }
 
@@ -107,8 +101,6 @@ export const InputsLogin = styled.div`
   }
 `;
 
-
-
 export const Button = styled.button`
   width: 80vw;
   height: 5vh;
@@ -117,16 +109,16 @@ export const Button = styled.button`
   margin-bottom: 2vh;
   margin-top: -3vh;
   color: #fff;
-  background-color: var(--continent-color);
+  background: linear-gradient(135deg, #4682B4, #7D3C98);
   font-size: 2vh;
   font-weight: bold;
-  box-shadow: 0 0 10px var(--continent-color);
+  box-shadow: 0 0 10px #4682B4;
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover {
     cursor: pointer;
-    background-color: var(--ocean-color); 
-    box-shadow: 0 0 15px var(--ocean-color); 
+    background: linear-gradient(135deg, #7D3C98, #4682B4);
+    box-shadow: 0 0 15px #7D3C98;
   }
 
   @media (max-width: 3000px) {
@@ -137,10 +129,10 @@ export const Button = styled.button`
 export const CreateAccountButton = styled.button`
   width: 80vw;
   height: 5vh;
-  border: 2px solid var(--ocean-color); 
+  border: 2px solid #4682B4;
   border-radius: 27px;
   margin-bottom: 3vh;
-  color: var(--ocean-color); 
+  color: #4682B4;
   background-color: transparent;
   font-size: 2vh;
   font-weight: bold;
@@ -148,9 +140,9 @@ export const CreateAccountButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: var(--ocean-color); 
-    color: var(--connection-line-color);
-    box-shadow: 0 0 15px var(--ocean-color); 
+    background-color: #4682B4;
+    color: #E0E0E0;
+    box-shadow: 0 0 15px #4682B4;
   }
 
   @media (max-width: 3000px) {

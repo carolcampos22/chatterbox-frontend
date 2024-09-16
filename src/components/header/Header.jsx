@@ -6,7 +6,7 @@ const Header = () => {
   
   return (
     <HeaderContainer>
-      <img src={Logo} alt="Logo da Chatterbox Tech" />
+      <img src={Logo} style={{width: "12vw"}} alt="Logo da Chatterbox Tech" />
       <div>
         <h1>Chatterbox Tech</h1>
         <p>A sua rede social de tecnologia!</p>

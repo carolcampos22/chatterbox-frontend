@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const CommentsContainer = styled.div`
     display: flex;
@@ -21,13 +21,37 @@ export const CommentsContainer = styled.div`
     }
 `
 
+const pulseAnimation = keyframes`
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+`;
+
 export const Loading = styled.div`
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vh;
-    color: #FF6489;
-    margin-top: 40vh;
-`
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vh;
+  color: #b0b0b0; 
+  margin-top: 40vh;
+  text-shadow: 0 0 10px #a0a0a0, 0 0 20px #b0b0b0, 0 0 30px #b0b0b0, 0 0 40px #d0d0d0;
+  animation: ${pulseAnimation} 1.5s infinite ease-in-out;
+
+  @media (max-width: 750px) {
+    font-size: 4vh;
+    margin-top: 30vh;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 5vh;
+    margin-top: 20vh;
+  }
+`;
 
 export const ButtonComment = styled.div`
     display: flex;
