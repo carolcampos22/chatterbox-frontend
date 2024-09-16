@@ -38,7 +38,7 @@ export const Login = ({ setIsLoggedIn }) => {
           password: form.password
         });
 
-        localStorage.setItem("login-labeddit.token", token);
+        localStorage.setItem("login-chatterbox.token", token);
 
         dispatch(loginUser({ email: form.email, token }))
 

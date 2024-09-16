@@ -26,7 +26,7 @@ export const CreatePostFormPage = () => {
                 content: form.content,
 
             })
-            localStorage.getItem("login-labeddit.token", token)
+            localStorage.getItem("login-chatterbox.token", token)
             alert("Post enviado!")
             console.log("TOKEN: ", token)
 

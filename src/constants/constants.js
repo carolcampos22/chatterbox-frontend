@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-// export const BASE_URL = "https://labeddit-qxeq.onrender.com"
+// export const BASE_URL = "https://chatterbox-qxeq.onrender.com"
 export const BASE_URL = "http://localhost:3003"
 
 export const validateEmail = email => /[a-zA-Z0-9]+@[a-z]{3}[.a-z]?/.test(email)
@@ -24,7 +24,7 @@ export const ListPosts = async () => {
         `${BASE_URL}/posts`,
         {
             headers: {
-                Authorization: localStorage.getItem("login-labeddit.token")
+                Authorization: localStorage.getItem("login-chatterbox.token")
             }
         }
         )
@@ -36,7 +36,7 @@ export const ListComments = async (id) => {
         `${BASE_URL}/comments/${id}`,
         {
             headers: {
-                Authorization: localStorage.getItem("login-labeddit.token")
+                Authorization: localStorage.getItem("login-chatterbox.token")
             }
         }
         )
@@ -49,7 +49,7 @@ export const AddPost = async (body) => {
         body,
         {
             headers: {
-                Authorization: localStorage.getItem("login-labeddit.token")
+                Authorization: localStorage.getItem("login-chatterboxox.token")
             }
         }
         )
@@ -62,7 +62,7 @@ export const AddComment = async (body, id) => {
         body,
         {
             headers: {
-                Authorization: localStorage.getItem("login-labeddit.token")
+                Authorization: localStorage.getItem("login-chatterbox.token")
             }
         }
         )
@@ -77,7 +77,7 @@ export const LikeOrDislike = async (body, id) => {
         body,
         {
           headers: {
-            Authorization: localStorage.getItem('login-labeddit.token'),
+            Authorization: localStorage.getItem('login-chatterbox.token'),
           },
         }
       );

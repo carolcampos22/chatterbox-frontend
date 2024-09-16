@@ -38,7 +38,7 @@ yarn start
 ```
 
 <!-- ## Site 
-https://labeddit-frontend-delta.vercel.app -->
+https://chatterbox-frontend-delta.vercel.app -->
 
 <!-- ## Layout
 
@@ -59,8 +59,8 @@ https://labeddit-frontend-delta.vercel.app -->
 ![](./src/assets/screenshots/comments-page.png) -->
 
 ## Próximos passos
+- Adição das funcionalidades de atualização e de deleção de posts
 - Responsividade
-- Melhorias na estilização da página de cadastro
 - Light/dark mode
 
 ## Autora

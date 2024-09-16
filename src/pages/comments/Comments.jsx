@@ -31,7 +31,7 @@
 //         message: form.message,
 
 //       }, id)
-//       localStorage.getItem("login-labeddit.token", token)
+//       localStorage.getItem("login-chatterbox.token", token)
 //       alert("Comentário enviado!")
 
 //     } catch (error) {
@@ -137,7 +137,7 @@ const Comments = () => {
 
     try {
       const { token } = await AddComment({ message: form.message }, id);
-      localStorage.getItem("login-labeddit.token", token);
+      localStorage.getItem("login-chatterbox.token", token);
       alert("Comentário enviado!");
       setShouldUpdate(prev => !prev); // Alterna o estado para forçar atualização
     } catch (error) {

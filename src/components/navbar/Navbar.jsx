@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   const handleLogoutClick = () => {
     dispatch(logoutUser());
-    localStorage.removeItem("login-labeddit.token");
+    localStorage.removeItem("login-chatterbox.token");
     goToLoginPage(navigate);
   };
 
