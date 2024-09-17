@@ -29,6 +29,24 @@ export const LeftSide = styled.div`
   h1 {
     font-size: 3rem;
   }
+
+  @media (max-width: 1400px) {
+    img{
+      width: 50vw;
+    }    
+  }
+
+  @media (max-width: 970px) {
+    
+    img{
+      width: 40vw;
+    }
+    
+}
+
+@media (max-width: 820px) {
+   display: none;
+}
 `;
 
 export const RightSide = styled.div`
@@ -39,6 +57,11 @@ export const RightSide = styled.div`
   background-color: #E0E0E0;
   width: 50vw;
   height: 100vh;
+
+  @media (max-width: 820px) {
+   width: 100%;
+   background: linear-gradient(135deg, #0B3D91, #7D3C98);
+}
 `;
 
 export const Logo = styled.div`
@@ -46,6 +69,10 @@ export const Logo = styled.div`
 
   img {
     width: 22vw;
+
+    @media (max-width: 820px) {
+       width: 80%;   
+    }
   }
 
   h1 {
@@ -56,7 +83,12 @@ export const Logo = styled.div`
   h2 {
     color: gray;
   }
-`;
+  
+  @media (max-width: 970px) {    
+      width: 50vw;      
+  }
+
+`
 
 export const InputsLogin = styled.div`
   margin-bottom: 4vh;
@@ -94,12 +126,19 @@ export const InputsLogin = styled.div`
     @media (max-width: 3000px) {
       width: 30vw;
     }
-  }
 
-  @media (max-width: 3000px) {
-    width: 30vw;
+    @media (max-width: 820px) {
+      width: 100%;
+  }
   }
 `;
+
+export const ButtonsContainer = styled.div`
+  @media (max-width: 820px) {
+     display: flex;
+     flex-direction: column;
+    }
+`
 
 export const Button = styled.button`
   width: 80vw;
@@ -124,6 +163,10 @@ export const Button = styled.button`
   @media (max-width: 3000px) {
     width: 30vw;
   }
+
+  @media (max-width: 820px) {
+     width: 60vw;
+    }
 `;
 
 export const CreateAccountButton = styled.button`
@@ -148,4 +191,8 @@ export const CreateAccountButton = styled.button`
   @media (max-width: 3000px) {
     width: 30vw;
   }
+
+  @media (max-width: 820px) {
+     width: 60vw;
+    }
 `;

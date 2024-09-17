@@ -29,7 +29,6 @@ const Posts = () => {
     ListPosts()
       .then(data => {
         setPosts(data)
-        console.log(data)
         setLoading(false)
       })
       .catch(
@@ -54,6 +53,7 @@ const Posts = () => {
         <ButtonPost onClick={() => goToCreatePostFormPage(navigate)}>Novo post</ButtonPost>
         <div>
           {posts.map((post, index) => {
+            console.log(post.title, post.comments)
             return (
               <CardPost
                 key={index}

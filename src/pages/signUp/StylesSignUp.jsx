@@ -29,6 +29,24 @@ export const RightSide = styled.div`
   h1 {
     font-size: 3rem;
   }
+
+  @media (max-width: 1400px) {
+    img{
+      width: 50vw;
+    }    
+  }
+
+  @media (max-width: 970px) {
+    
+    img{
+      width: 50vw;
+    }
+    
+}
+
+@media (max-width: 820px) {
+   display: none;
+}
 `;
 
 export const LeftSide = styled.div`
@@ -43,7 +61,17 @@ export const LeftSide = styled.div`
   img{
     width: 22vw;
     margin-bottom: 2vh;
+
+    @media (max-width: 820px) {
+       width: 60vw;
+      
+    }
   }
+
+  @media (max-width: 820px) {
+   width: 100%;
+   background: linear-gradient(135deg, #0B3D91, #7D3C98);
+}
 `;
 
 
@@ -84,11 +112,19 @@ export const InputsSignUpContainer = styled.div`
     @media (max-width: 3000px) {
       width: 30vw;
     }
+
+    @media (max-width: 820px) {
+       width: 60vw;
+       align-self: center;
+       
+    }
   }
 
   @media (max-width: 3000px) {
     width: 30vw;
   }
+
+  
 `;
 
 export const Button = styled.button`
@@ -114,6 +150,10 @@ export const Button = styled.button`
   @media (max-width: 3000px) {
     width: 30vw;
   }
+
+  @media (max-width: 820px) {
+       width: 60%;
+    }
 `;
 
 export const LoginButton = styled.button`
@@ -138,5 +178,14 @@ export const LoginButton = styled.button`
   @media (max-width: 3000px) {
     width: 30vw;
   }
+
+  @media (max-width: 970px) {
+    font-size: .9rem;;
+    
+}
+
+@media (max-width: 820px) {
+       width: 60%;
+    }
 `;
 

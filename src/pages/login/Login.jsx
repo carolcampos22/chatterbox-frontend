@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../../assets/chat.png'
 import picture from '../../assets/person-with-notebook.png'
 import './StylesLogin.jsx'
-import { Button, ContainerLogin, CreateAccountButton, InputsLogin, LeftSide, Logo, RightSide } from './StylesLogin.jsx'
+import { Button, ButtonsContainer, ContainerLogin, CreateAccountButton, InputsLogin, LeftSide, Logo, RightSide } from './StylesLogin.jsx'
 import { useNavigate } from 'react-router-dom'
 import { goToPostsPage, goToSignUpPage } from '../../router/coordinator'
 import { useForm } from "../../hooks/useForm"
@@ -88,14 +88,14 @@ export const Login = ({ setIsLoggedIn }) => {
               required
             ></input>
 
-            <div>
+            <ButtonsContainer>
               <Button type="submit" onClick={onSubmit}>
                 {isLoading ? 'Carregando...' : 'Entrar'}
               </Button>
               <CreateAccountButton onClick={() => goToSignUpPage(navigate)}>
                 Criar uma conta!
               </CreateAccountButton>
-            </div>
+            </ButtonsContainer>
 
           </form>
         </InputsLogin>

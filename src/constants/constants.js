@@ -49,7 +49,7 @@ export const AddPost = async (body) => {
         body,
         {
             headers: {
-                Authorization: localStorage.getItem("login-chatterboxox.token")
+                Authorization: localStorage.getItem("login-chatterbox.token")
             }
         }
         )
