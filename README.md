@@ -60,6 +60,8 @@ https://chatterbox-frontend-delta.vercel.app -->
 
 ## Próximos passos
 - Adição das funcionalidades de atualização e de deleção de posts
+- Criação de modais para indicar quando um novo post ou comentário é adicionado, bem como para confirmação de deleção dos mesmos
+- Adição de funcionalidade de edição de posts/comentários
 - Responsividade
 - Light/dark mode
 

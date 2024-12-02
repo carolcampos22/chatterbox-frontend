@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-// export const BASE_URL = "https://chatterbox-qxeq.onrender.com"
-export const BASE_URL = "http://localhost:3003"
+export const BASE_URL = "https://chatterbox-l2oy.onrender.com"
 
 export const validateEmail = email => /[a-zA-Z0-9]+@[a-z]{3}[.a-z]?/.test(email)
 
